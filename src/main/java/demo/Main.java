@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         try {
-            System.out.println("Bắt đầu lấy link mới từ trang chủ");
+            System.out.println("Bắt đầu lấy link");
             ArrayList<String> listLink = new ArrayList<String>();
             Document document = Jsoup.connect("https://vnexpress.net/").get();
             Elements aElements = document.select("a");
